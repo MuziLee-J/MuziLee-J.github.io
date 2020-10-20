@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2020/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C/</loc>
+    <loc>https://muzilee-j.github.io/2020/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C/</loc>
     
     <lastmod>2020-10-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index-1.html</loc>
+    <loc>https://muzilee-j.github.io/categories/index-1.html</loc>
     
     <lastmod>2020-10-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index-1.html</loc>
+    <loc>https://muzilee-j.github.io/tags/index-1.html</loc>
     
     <lastmod>2020-10-20</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://muzilee-j.github.io/categories/index.html</loc>
     
     <lastmod>2020-10-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://muzilee-j.github.io/tags/index.html</loc>
     
     <lastmod>2020-10-19</lastmod>
     
@@ -38,7 +38,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://muzilee-j.github.io/</loc>
     <lastmod>2020-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -46,7 +46,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E9%94%99%E8%AF%AF/</loc>
+    <loc>https://muzilee-j.github.io/tags/%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2020-10-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
