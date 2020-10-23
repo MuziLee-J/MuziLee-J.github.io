@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://muzilee-j.github.io/2020/10/23/Hexo%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2020-10-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://muzilee-j.github.io/2020/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C/</loc>
     
     <lastmod>2020-10-21</lastmod>
@@ -51,6 +58,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://muzilee-j.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2020-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://muzilee-j.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>

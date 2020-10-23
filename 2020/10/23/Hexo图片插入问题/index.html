@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://muzilee-j.github.io">
-  <title>Tag: 随笔 | MuziLee的脑子</title>
+  <title>Github Page+Hexo图片插入问题 | MuziLee的脑子</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="MuziLee的脑子">
-<meta property="og:url" content="https://muzilee-j.github.io/tags/%E9%9A%8F%E7%AC%94/index.html">
+  <meta name="description" content="Hexo推送文章图片的时候，会使用本地图片部署到Github上面显示出来，可能会出现显示不出来照片，以下方法可以解决：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github Page+Hexo图片插入问题">
+<meta property="og:url" content="https://muzilee-j.github.io/2020/10/23/Hexo%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="MuziLee的脑子">
+<meta property="og:description" content="Hexo推送文章图片的时候，会使用本地图片部署到Github上面显示出来，可能会出现显示不出来照片，以下方法可以解决：">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-23T04:05:24.000Z">
+<meta property="article:modified_time" content="2020-10-23T06:22:48.781Z">
 <meta property="article:author" content="MuziLee-J">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="MuziLee的脑子" type="application/atom+xml">
@@ -160,67 +165,267 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Hexo图片插入问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C/" class="archive-article-date">
-        <time datetime="2020-10-20T14:24:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-20</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C/" target="_blank">MuziLee</a>
   
+    <h1 class="article-title" itemprop="name">
+      Github Page+Hexo图片插入问题
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
+  
+  
+<a href="/2020/10/23/Hexo%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/" class="archive-article-date">
+        <time datetime="2020-10-23T04:05:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-23</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">198字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>Hexo推送文章图片的时候，会使用本地图片部署到Github上面显示出来，可能会出现显示不出来照片，以下方法可以解决：  </p>
+<a id="more"></a>
+<p>①在博客的目录下面的<code>_config.ym</code>文件中找到<code>post_asset_folder: false</code>，把<code>false</code>改为<code>true</code>，开启资源文件夹的功能。然后<code>hexo g -d</code>重新部署网站。 </p>
+<p>②此时，如果执行<code>hexo n [layout] &lt;title&gt;</code>创建一篇新的文章，就会在博客的<code>sourse/_posts</code>的文件中生成和md文件名字一样的文件夹，这个**<em>文件夹用于存放照片**</em>。比如：</p>
+<blockquote>
+<p>hexo n “Photo”<br>生成Photo.md和Photo文件夹。 </p>
+</blockquote>
+<p>③安装插件：  </p>
+<blockquote>
+<p>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save   </p>
+</blockquote>
+<p>④在写文章的时候使用Markdown的语法。</p>
+<blockquote>
+<p>![title](picture path)    </p>
+</blockquote>
+<p>⑤<code>hexo clean</code>&amp;<code>hexo g -d</code>部署即可。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
 
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
 
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://muzilee-j.github.io/2020/10/23/Hexo%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/10/23/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Markdown的用法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+
+if(true){
+    var gitalk = new Gitalk({
+    clientID: '462bde2a55e68a2e92d3',
+    clientSecret: '531b3a922796abcdbfdc7be285ed6a7b732eb1d1',
+    repo: 'muzilee-j.github.io',
+    owner: 'MuziLee-J',
+    admin: ['MuziLee-J'],
+    id: 'Fri Oct 23 2020 12:05:24 GMT+0800',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+
+
+
+
+
+
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+
+if(true){
+    var gitalk = new Gitalk({
+    clientID: '462bde2a55e68a2e92d3',
+    clientSecret: '531b3a922796abcdbfdc7be285ed6a7b732eb1d1',
+    repo: 'muzilee-j.github.io',
+    owner: 'MuziLee-J',
+    admin: ['MuziLee-J'],
+    id: 'Fri Oct 23 2020 12:05:24 GMT+0800',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+
+  
           </div>
         </div>
       </div>
@@ -259,9 +464,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
