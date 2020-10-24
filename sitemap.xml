@@ -50,6 +50,13 @@
     
   </url>
   
+  <url>
+    <loc>https://muzilee-j.github.io/404.html</loc>
+    
+    <lastmod>2020-03-27</lastmod>
+    
+  </url>
+  
 
   <url>
     <loc>https://muzilee-j.github.io/</loc>
@@ -60,14 +67,14 @@
 
   
   <url>
-    <loc>https://muzilee-j.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://muzilee-j.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://muzilee-j.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://muzilee-j.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
