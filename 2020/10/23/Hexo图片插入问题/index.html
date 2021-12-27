@@ -18,7 +18,7 @@
 <meta property="og:description" content="Hexo推送文章图片的时候，会使用本地图片部署到Github上面显示出来，可能会出现显示不出来照片，以下方法可以解决：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-23T04:05:24.000Z">
-<meta property="article:modified_time" content="2020-10-24T01:24:01.319Z">
+<meta property="article:modified_time" content="2021-12-27T14:02:00.299Z">
 <meta property="article:author" content="MuziLee-J">
 <meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
@@ -216,7 +216,7 @@
     <p>Hexo推送文章图片的时候，会使用本地图片部署到Github上面显示出来，可能会出现显示不出来照片，以下方法可以解决：  </p>
 <a id="more"></a>
 <p>①在博客的目录下面的<code>_config.ym</code>文件中找到<code>post_asset_folder: false</code>，把<code>false</code>改为<code>true</code>，开启资源文件夹的功能。然后<code>hexo g -d</code>重新部署网站。 </p>
-<p>②此时，如果执行<code>hexo n [layout] &lt;title&gt;</code>创建一篇新的文章，就会在博客的<code>sourse/_posts</code>的文件中生成和md文件名字一样的文件夹，这个**<em>文件夹用于存放照片**</em>。比如：</p>
+<p>②此时，如果执行<code>hexo n [layout] &lt;title&gt;</code>创建一篇新的文章，就会在博客的<code>sourse/_posts</code>的文件中生成和md文件名字一样的文件夹，这个<em>文件夹用于存放照片</em>。比如：</p>
 <blockquote>
 <p>hexo n “Photo”<br>生成Photo.md和Photo文件夹。 </p>
 </blockquote>
@@ -544,15 +544,15 @@ gitalk.render('gitalk-container')
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
